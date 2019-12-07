@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>com.tribbloids.spike</groupId>
+    <artifactId>cross-scala-spike</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>spike-common</artifactId>
+
+  <dependencies>
+
+    <!-- https://mvnrepository.com/artifact/org.typelevel/cats-core -->
+    <dependency>
+      <groupId>org.typelevel</groupId>
+      <artifactId>cats-core_${scala.binary.version}</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.github.pureconfig/pureconfig -->
+    <dependency>
+      <groupId>com.github.pureconfig</groupId>
+      <artifactId>pureconfig_${scala.binary.version}</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.jcraft</groupId>
+      <artifactId>jsch</artifactId>
+      <version>0.1.54</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
+    <dependency>
+      <groupId>commons-validator</groupId>
+      <artifactId>commons-validator</artifactId>
+      <version>1.6</version>
+    </dependency>
+
+<!--    <dependency>-->
+<!--      <groupId>org.apache.httpcomponents</groupId>-->
+<!--      <artifactId>httpcore</artifactId>-->
+<!--      <version>4.4.4</version>-->
+<!--      &lt;!&ndash;<scope>provided</scope>&ndash;&gt;-->
+<!--    </dependency>-->
+
+  </dependencies>
+
+</project>

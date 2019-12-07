@@ -1,0 +1,116 @@
+*.class
+*.log
+*.logs
+*keyStores*.txt
+*policies*.txt
+conf_1/
+conf_2/
+*/rootkey.csv
+**/session.json
+
+# sbt specific
+.cache/
+.history/
+.lib/
+dist/*
+target/
+*/lib_managed/
+*/src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# Eclipse specific
+.pmd
+.classpath
+.project
+.settings/
+
+# IntelliJ-IDEA specific
+*.iml
+.idea/
+.idea_modules/
+
+#Misc
+**temp
+**foo
+
+#aws key
+# **/rootkey.csv
+
+#Hive
+**/metastore_db
+**/metastore_db_test
+**/warehouse
+**/spark-warehouse
+**/thriftserver-pid
+
+#H2
+**/h2
+**.db
+
+*.jceks*
+autostart.json
+rotatingKeyVersion.json
+!broker/**/*.jceks*
+
+#Policy
+conf/policy*.xml
+
+#doc
+docs/_site
+docs/api
+
+#maven
+pom.xml.versionsBackup
+**.tgz
+**.tar.gz
+settings.xml
+
+#ansible
+**.retry
+
+#hdfs
+**.crc
+**.lock
+
+#signed policy xml
+conf*/**/*.xml.signed
+!license*.xml.signed
+
+#temporary code that are not supposed to be uploaded.
+**/spike*.*
+
+#vscode
+.vscode
+
+**/.rootkey.csv
+
+**/.spark-dist
+**/.ipynb_checkpoints
+
+#flatten-maven-plugin
+.flattened-pom.xml
+
+#pytest
+**/.pytest_cache
+*.tar
+
+# non-template datapassports config files
+conf/datapassports-args.csv
+conf/krb5.conf
+conf/log4j.properties
+conf/krb-env
+
+logs/
+**/keystore/log
+
+# build config files
+build-tools/conf/*.profile
+/.metadata/
+
+#Mac OS
+**/.DS_Store

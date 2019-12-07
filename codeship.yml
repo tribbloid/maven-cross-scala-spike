@@ -1,0 +1,11 @@
+# intend to be used with https://github.com/painless-software/codeship-yaml
+# disabled, not supporting multiple pipelines
+
+install:
+#  - jdk_switcher use oraclejdk8
+  - "pip install awscli"
+before_script:
+  - "./build-tools/mvn-download.sh"
+script:
+  - "./build-tools/CI-apache-latest.sh"
+after_success:
